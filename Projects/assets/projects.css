@@ -1,0 +1,199 @@
+:root{
+    --BgColor: #20252A;
+    --FontColorWhite: #ffffff;
+    --BtnColor: #FFD900;
+    --SecondColor: #2D353C;
+    --OrangeColor : #E38B18;
+    --Padding1: 8%;
+    --Padding2: 4%;
+    --Padding3: 2%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+#body{
+    background-color: var(--BgColor);
+    padding: 0px var(--Padding2);
+    color: var(--FontColorWhite);
+}
+
+html{
+    font-size: 20px;
+}
+
+span {
+    color: var(--OrangeColor);
+}
+
+#projects_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--Padding2);
+}
+
+#projects_header .left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    row-gap: 30px;
+    height: 100%;
+    width: 50%;
+}
+#projects_header #main-left-side{
+    background-color: var(--SecondColor);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: var(--Padding2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+#projects_header button a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--FontColorWhite);
+}
+
+#projects_header .right-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+#projects_header .right-side div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#projects_header .right-side #profile_socials{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+#projects_header .right-side #profile_img{
+    width: 65%;
+}
+
+#projects_header .right-side #profile_socials img{
+    width: 44px;
+    height: 44px;
+}
+
+#projects_main{
+    margin-top: 100px;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    column-gap: 10px;
+}
+
+#projects_main #main_skills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#projects_main #main_skills .accordion-flush *{
+    background-color: var(--SecondColor);
+    color: var(--FontColorWhite);
+    border-radius: 10px !important;
+}
+
+#projects_main #main_skills .accordion-flush{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.accordion-button::after{
+    background-image: url(./icons/arrow.png) !important;
+}
+
+#projects_main #main_reviews{
+    background-color: var(--SecondColor);
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+    min-height: 50%;
+}
+#projects_main #main_reviews #main_reviews_comments{
+    background-color: var(--BgColor);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: var(--Padding3);
+}
+
+#projects_main #main_reviews #main_reviews_commented{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#projects_main #main_reviews #main_reviews_comment{
+    border-radius: 10px;
+    display: flex;
+    column-gap: 50px;
+}
+#projects_main #main_reviews #main_reviews_Review{
+    padding: var(--Padding3) 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 50px;
+    height: auto;
+}
+#projects_main #main_reviews #main_reviews_Review #main_reviews_date{
+    align-self: flex-end;
+    opacity: 0.6;
+}
+
+#projects_main #main_reviews #main_reviews_comment img{
+    width: 100px;
+    height: 100px;
+}
+
+
+@media only screen and (max-width : 600px) {
+    html{
+        font-size: 12px;
+    }
+    #projects_header{
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    #projects_main #main_reviews #main_reviews_comment{
+        column-gap: 15px;
+    }
+
+    #projects_header .left-side{
+        width: 100%;
+    }
+
+    #projects_main {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+
+
+/* Projects Css Section */
