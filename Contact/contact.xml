@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding=" utf-8 "?>
+
+<persons>
+
+<person1 id="1">
+    <name> ilyass Samoudi</name>
+    <comment> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus sequi, doloremque ad, quidem odit adipisci, iusto ut beatae quos repudiandae autem ea voluptates vel recusandae similique repellendus saepe alias voluptatum?</comment>
+</person1>
+<person2 id="2">
+    <name> zakaria</name>
+    <comment> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus sequi, doloremque ad, quidem odit adipisci, iusto ut beatae quos repudiandae autem ea voluptates vel recusandae similique repellendus saepe alias voluptatum?</comment>
+</person2 >
+<person3>
+    <name> zakaria zakaria</name>
+    <comment> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus sequi, doloremque ad, quidem odit adipisci, iusto ut beatae quos repudiandae autem ea voluptates vel recusandae similique repellendus saepe alias voluptatum?</comment>
+
+</person3>
+</persons>
+
