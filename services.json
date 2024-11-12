@@ -1,0 +1,45 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "name": "Développement Front-end",
+            "description": "Création d'interfaces utilisateur attrayantes et réactives.",
+            "specialty": "Développement Web",
+            "price": "50€/heure",
+            "members": [3, 4]
+        },
+        {
+            "id": 2,
+            "name": "Réseautique IT",
+            "description": "Configuration et maintenance des infrastructures réseau.",
+            "specialty": "IT Networking",
+            "price": "55€/heure",
+            "members": [3, 4]
+        },
+        {
+            "id": 3,
+            "name": "Développement Mobile",
+            "description": "Conception et développement d'applications mobiles performantes.",
+            "specialty": "Développement Mobile",
+            "price": "70€/heure",
+            "members": [3, 4]
+        },
+        {
+            "id": 4,
+            "name": "Développement Logiciel",
+            "description": "Développement de logiciels sur mesure pour diverses applications.",
+            "specialty": "Développement Logiciel",
+            "price": "65€/heure",
+            "members": [3, 4]
+        },
+        {
+            "id": 5,
+            "name": "Développement Back-end",
+            "description": "Mise en place de serveurs et de bases de données sécurisés.",
+            "specialty": "Développement Web",
+            "price": "60€/heure",
+            "members": [1, 2, 3]
+        }
+    ]
+  }
+  
