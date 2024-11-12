@@ -97,3 +97,74 @@
     background-color: #20252A ;
 
 }
+
+
+/* model services */
+.modal {
+    overflow: inherit;
+    overflow-y: inherit;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+  
+  .modal-dialog {
+    max-width: 500px;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  .modal-content {
+  
+    border: 0;
+    border-radius: 0;
+  
+  }
+  
+  .modal-header {
+    border: 0;
+    padding :0;
+    position: relative;
+  }
+  
+  .modal-header .close {
+    margin: 0;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 23px;
+    height: 23px;
+    border-radius: 23px;
+    background-color: #00aeef;
+    color: #ffe300;
+    font-size: 9px;
+    opacity: 1;
+    z-index: 10;
+  }
+  
+  .modal-content p {
+    padding: 0 20px;
+  }
+  
+  .modal-body {
+    padding: 0 0 10px 0;
+      height: 450px;
+      overflow: auto;
+  }
+
+  /* end model */
+  @media (max-width: 767.98px) { .border-sm-start-none { border-left: none !important; } }
+
+
+.myModal{
+    background-color: #2D353C;
+}
