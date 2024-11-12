@@ -6,13 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="./assets/projects.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.2.0/dist/css/coreui.min.css" rel="stylesheet"
-    integrity="sha384-u3h5SFn5baVOWbh8UkOrAaLXttgSF0vXI15ODtCSxl0v/VKivnCN6iHCcvlyTL7L" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- core UI -->
+  <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@5.6.0/dist/css/coreui.min.css" rel="stylesheet" integrity="sha384-/ElSMRaKgsWY7yc9is+yGoOmLb0lEnL0i8BqJoNBrejJNHx8+6ZSD0u13ea6fUn3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@5.6.0/dist/js/coreui.bundle.min.js" integrity="sha384-mLGa1g62d9QzDXVGjvdUasvKUjkIoq7kjvKJsQifgQdr9x+4Ge3SZuGRTHYwvAl/" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
@@ -24,47 +21,60 @@
     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal1">
       Add
     </button>
-    <!-- Modal -->
+    <!-- Modal add -->
     <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModal1Label">
-              Add & Edit Project
+              Add
             </h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form class="was-validated">
               <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">Title</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Project's Title" required>
+                <label for="titleInput" class="form-label">Title</label>
+                <input type="text" class="form-control" id="titleInput" placeholder="Project's Title" required>
               </div>
               <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Description</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Project's Description" required>
+                <label for="descriptionInput" class="form-label">Description</label>
+                <input type="text" class="form-control" id="descriptionInput" placeholder="Project's Description" required>
               </div>
               <div class="mb-3">
                 <label for="validationTextarea" class="form-label">Details</label>
                 <textarea class="form-control" id="validationTextarea" placeholder="Project's Details" required></textarea>
               </div>
               <div class="mb-3">
-                <select class="form-select" required aria-label="select example">
-                  <option value="1">E-commerce</option>
-                  <option value="2">Développement Web</option>
-                  <option value="3">Développement d'Application</option>
+                <select class="form-select" id="categoryInput" required aria-label="select example">
+                  <option value="E-commerce">E-commerce</option>
+                  <option value="Développement Web">Développement Web</option>
+                  <option value="Développement d'Application">Développement d'Application</option>
                 </select>
                 <div class="invalid-feedback">Example invalid select feedback</div>
               </div>
               <div class="mb-3">
-                <label for="formGroupExampleInput3" class="form-label">Technologies</label>
-                <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Project's Technologies" required>
+                <select class="form-multi-select" id="ms1" multiple data-coreui-search="global" required>
+                  <optgroup label="frontend">
+                    <option value="./assets/icons/angular.png">Angular</option>
+                    <option value="./assets/icons/bootstrap.png">Bootstrap</option>
+                    <option value="./assets/icons/react.png">React.js</option>
+                    <option value="./assets/icons/vuejs.png">Vue.js</option>
+                    <option value="./assets/icons/css.png">Css</option>
+                    <option value="./assets/icons/js.png">JavaScript</option>
+                    <option value="./assets/icons/sass.png">JavaScript</option>
+                  </optgroup>
+                  <optgroup label="backend">
+                    <option value="./assets/icons/java.png">Java</option>
+                    <option value="./assets/icons/django.png">Django</option>
+                    <option value="./assets/icons/laravel.png">Laravel</option>
+                    <option value="./assets/icons/nodejs.png">Node.js</option>
+                    <option value="./assets/icons/mongodb.png">Mongodb</option>
+                  </optgroup>
+                </select>
               </div>
               <div class="mb-3">
-                <input type="file" class="form-control" aria-label="file example" required>
-              </div>
-              <div class="mb-3">
-                <button class="btn btn-warning" type="submit">Add Project</button>
+                <button id="addProject" class="btn btn-warning" onclick="addProject()">Add Project</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                   Close
                 </button>
@@ -93,9 +103,14 @@
     </div>
   </div>
   <main id="projects_main">
+
+    
   </main>
 
   <script src="./assets/projects.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- core UI -->
+  <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.2.0/dist/js/coreui.bundle.min.js" integrity="sha384-JdRP5GRWP6APhoVS1OM/pOKMWe7q9q8hpl+J2nhCfVJKoS+yzGtELC5REIYKrymn" crossorigin="anonymous"></script>
   
 </body>
 

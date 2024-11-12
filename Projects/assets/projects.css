@@ -210,7 +210,7 @@ span {
 #projects_main {
     background-color: var(--SecondColor);
     margin: var(--Padding3);
-    padding: var(--Padding3);
+    padding: 1%;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
@@ -224,8 +224,8 @@ span {
 }
 
 #projects_main .card img{
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 50%;
     align-self: center;
 }
 
@@ -247,6 +247,14 @@ span {
     border-radius: 10px;
 }
 
+#projects_main .card {
+ width: 15rem !important;
+ height: auto !important;
+}
+
+.row{
+    display: flex !important;
+}
 
 
 /* Media Query Section */
