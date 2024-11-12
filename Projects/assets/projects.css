@@ -31,14 +31,14 @@ span {
     color: var(--OrangeColor);
 }
 
-#projects_header{
+#profile_header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: var(--Padding2);
 }
 
-#projects_header .left-side{
+#profile_header .left-side{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -47,7 +47,7 @@ span {
     height: 100%;
     width: 50%;
 }
-#projects_header #main-left-side{
+#profile_header #main-left-side{
     background-color: var(--SecondColor);
     width: 100%;
     height: 100%;
@@ -59,13 +59,13 @@ span {
     row-gap: 10px;
 }
 
-#projects_header button a {
+#profile_header button a {
     text-decoration: none;
     list-style: none;
     color: var(--FontColorWhite);
 }
 
-#projects_header .right-side {
+#profile_header .right-side {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,28 +73,28 @@ span {
     row-gap: 40px;
 }
 
-#projects_header .right-side div{
+#profile_header .right-side div{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-#projects_header .right-side #profile_socials{
+#profile_header .right-side #profile_socials{
     display: flex;
     justify-content: center;
     column-gap: 50px;
 }
 
-#projects_header .right-side #profile_img{
+#profile_header .right-side #profile_img{
     width: 65%;
 }
 
-#projects_header .right-side #profile_socials img{
+#profile_header .right-side #profile_socials img{
     width: 44px;
     height: 44px;
 }
 
-#projects_main{
+#profile_main{
     margin-top: 100px;
     min-height: 100vh;
     height: auto;
@@ -102,20 +102,20 @@ span {
     column-gap: 10px;
 }
 
-#projects_main #main_skills{
+#profile_main #main_skills{
     width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
 
-#projects_main #main_skills .accordion-flush *{
+#profile_main #main_skills .accordion-flush *{
     background-color: var(--SecondColor);
     color: var(--FontColorWhite);
     border-radius: 10px !important;
 }
 
-#projects_main #main_skills .accordion-flush{
+#profile_main #main_skills .accordion-flush{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -125,7 +125,7 @@ span {
     background-image: url(./icons/arrow.png) !important;
 }
 
-#projects_main #main_reviews{
+#profile_main #main_reviews{
     background-color: var(--SecondColor);
     width: 100%;
     padding: 20px;
@@ -133,7 +133,7 @@ span {
     height: fit-content;
     min-height: 50%;
 }
-#projects_main #main_reviews #main_reviews_comments{
+#profile_main #main_reviews #main_reviews_comments{
     background-color: var(--BgColor);
     display: flex;
     flex-direction: column;
@@ -141,18 +141,18 @@ span {
     padding: var(--Padding3);
 }
 
-#projects_main #main_reviews #main_reviews_commented{
+#profile_main #main_reviews #main_reviews_commented{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
 
-#projects_main #main_reviews #main_reviews_comment{
+#profile_main #main_reviews #main_reviews_comment{
     border-radius: 10px;
     display: flex;
     column-gap: 50px;
 }
-#projects_main #main_reviews #main_reviews_Review{
+#profile_main #main_reviews #main_reviews_Review{
     padding: var(--Padding3) 0;
     border-radius: 10px;
     display: flex;
@@ -160,40 +160,118 @@ span {
     column-gap: 50px;
     height: auto;
 }
-#projects_main #main_reviews #main_reviews_Review #main_reviews_date{
+#profile_main #main_reviews #main_reviews_Review #main_reviews_date{
     align-self: flex-end;
     opacity: 0.6;
 }
 
-#projects_main #main_reviews #main_reviews_comment img{
+#profile_main #main_reviews #main_reviews_comment img{
     width: 100px;
     height: 100px;
 }
 
 
+
+/* profile Css Section */
+
+#projects_header{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--Padding3);
+    align-items: center;
+}
+
+#projects_header > h1{
+    font-size: 3.2rem;
+}
+
+#projects_actions{
+    padding: var(--Padding3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#projects_actions a{
+    text-decoration: none;
+    color: var(--FontColorWhite);
+}
+
+#projects_actions .btn-secondary{
+    background-color: var(--SecondColor);
+    border-width: none !important;
+    outline: none !important;
+    border: none;
+}
+#projects_actions .btn-warning{
+    color: var(--FontColorWhite);
+}
+
+#projects_main {
+    background-color: var(--SecondColor);
+    margin: var(--Padding3);
+    padding: var(--Padding3);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+#projects_main .card{
+    background-color: var(--BgColor);
+    color: var(--FontColorWhite);
+}
+
+#projects_main .card img{
+    width: 80%;
+    height: 80%;
+    align-self: center;
+}
+
+#projects_main a{
+    color: var(--FontColorWhite); 
+}
+
+#projects_actions .modal-content, #projects_main .modal-content{
+    background-color: var(--BgColor);
+}
+
+#projects_main code{
+    font-size: x-large;
+}
+
+#projects_main .projects_main_content{
+    border: 1px solid white;
+    padding: var(--Padding3);
+    border-radius: 10px;
+}
+
+
+
+/* Media Query Section */
+
 @media only screen and (max-width : 600px) {
     html{
         font-size: 12px;
     }
-    #projects_header{
+    #profile_header{
         flex-direction: column-reverse;
         align-items: center;
         row-gap: 30px;
     }
 
-    #projects_main #main_reviews #main_reviews_comment{
+    #profile_main #main_reviews #main_reviews_comment{
         column-gap: 15px;
     }
 
-    #projects_header .left-side{
+    #profile_header .left-side{
         width: 100%;
     }
 
-    #projects_main {
+    #profile_main {
         flex-direction: column;
         row-gap: 10px;
     }
+
 }
-
-
-/* Projects Css Section */
