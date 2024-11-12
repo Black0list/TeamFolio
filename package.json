@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@coreui/coreui": "^5.2.0",
+    "bootstrap": "^5.3.3",
+    "install": "^0.13.0",
+    "npm": "^10.9.0"
+  }
+}
