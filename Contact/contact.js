@@ -25,5 +25,6 @@ let personsXMLData = `<persons>
 </person3>
 </persons>`; 
 
-let xmlParser = new DOMParser()
-personsXML = xmlParser.parseFromString
+let xmlParser = new DOMParser();
+let personsXML = xmlParser.parseFromString(personsXMLData, 'text/xml');
+let personData = 
