@@ -168,3 +168,8 @@
 .myModal{
     background-color: #2D353C;
 }
+
+.serv-section-2 img {
+  width: 100%; 
+  height: auto;
+}

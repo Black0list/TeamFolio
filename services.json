@@ -2,43 +2,52 @@
     "services": [
         {
             "id": 1,
-            "name": "Développement Front-end",
+            "name": "Dév Front-end",
             "description": "Création d'interfaces utilisateur attrayantes et réactives.",
             "specialty": "Développement Web",
-            "price": "50€/heure",
-            "members": [3, 4]
+            "price": "250 Dh/heure",
+            "image":"./img/s.jpg"
         },
         {
             "id": 2,
             "name": "Réseautique IT",
             "description": "Configuration et maintenance des infrastructures réseau.",
             "specialty": "IT Networking",
-            "price": "55€/heure",
-            "members": [3, 4]
+            "price": "200 Dh/heure",
+            "image":"./img/a.jpg"
         },
         {
             "id": 3,
-            "name": "Développement Mobile",
-            "description": "Conception et développement d'applications mobiles performantes.",
-            "specialty": "Développement Mobile",
-            "price": "70€/heure",
-            "members": [3, 4]
+            "name": "Développement",
+            "description": "Conception et développement d'applications mobiles .",
+            "specialty": "Mobile",
+            "price": "199 Dh/heure",
+            "image":"./img/a.jpg"
         },
         {
             "id": 4,
-            "name": "Développement Logiciel",
+            "name": "Security",
             "description": "Développement de logiciels sur mesure pour diverses applications.",
-            "specialty": "Développement Logiciel",
-            "price": "65€/heure",
-            "members": [3, 4]
+            "specialty": "system Secure",
+            "price": "150 Dh/heure",
+            "image":"./img/y.jpg.jpg"
         },
         {
             "id": 5,
-            "name": "Développement Back-end",
-            "description": "Mise en place de serveurs et de bases de données sécurisés.",
+            "name": "Développement",
+            "description": "Développement de logiciels sur mesure pour diverses applications.",
+            "specialty": "Dév Logiciel",
+            "price": "155 Dh/heure",
+            "image":"./img/y.jpg.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Dév Back-end",
+            "description": "Mise en place de serveurs et mesure mesure pour diverses applications.",
             "specialty": "Développement Web",
-            "price": "60€/heure",
-            "members": [1, 2, 3]
+            "price": "180 Dh/heure",
+            "image":"./img/profile-pic.png"
+           
         }
     ]
   }
