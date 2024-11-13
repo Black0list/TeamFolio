@@ -117,8 +117,9 @@ span {
     }
 }
 #contact-temo{
-    display: block;
-   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 #temo1{
     background-color: #2D353C;
