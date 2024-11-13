@@ -1,0 +1,80 @@
+
+.main {
+    background-color: #20252A;
+    /* background-color: white; */
+}
+.project {
+    padding-right: 20px;
+}
+#news, #old {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+}
+.heading1 {
+    padding-top: 30px;
+}
+.card { 
+    background: #2D353C;
+    color: white;
+}
+.d-grid {
+    padding-left: 20px !important;
+    padding-right: 20px;
+}
+.team-item img {
+    position: relative;
+    top: 0;
+    transition: .5s;
+}
+
+.team-item:hover img {
+    top: -30px;
+}
+
+.team-item .team-text {
+    position: relative;
+    height: 100px;
+    transition: .5s;
+}
+
+.team-item:hover .team-text {
+    margin-top: -60px;
+    height: 160px;
+}
+
+.team-item .team-text .team-social {
+    opacity: 0;
+    transition: .5s;
+}
+
+.team-item:hover .team-text .team-social {
+    opacity: 1;
+}
+
+.team-item .team-social .btn {
+    display: inline-flex;
+    color: var(--primary);
+    background: #FFFFFF;
+    border-radius: 40px;
+}
+
+.team-item .team-social .btn:hover {
+    color: #FFFFFF;
+    background: var(--primary);
+}
+#review {
+    margin-right: 40px;
+}
+.buttondiv {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+.row1{ 
+    display: flex; 
+    justify-content: space-evenly;
+}
+#projectsteam {
+    margin-right: 30px !important;
+}

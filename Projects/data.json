@@ -1,0 +1,94 @@
+
+
+
+{
+  "team": [
+    {
+      "id": 1,
+      "name": "Hadoui Abdelkebir",
+      "role": "Développeur Front-end",
+      
+      "bio": "Expert en gestion de bases de données et sécurité.",
+      "image" : "./img/7adoui.jpg",
+
+      "skills": ["HTML", "CSS", "JavaScript", "React"],
+      "projects" : [1,2,3,4],
+      "gmail" : "HadouiAbdelkebir@gmail.com",
+      "reviews": [
+        {
+          "client": "Jean Dupont",
+          "feedback": "Excellent travail, très réactive et professionnelle.",
+          "rating": 5 
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ilyass Samoudi",
+      "role": "Développeur Back-end",
+      "bio": "Expert en gestion de bases de données et sécurité.",
+      "image" : "./img/samoudi.jpg",
+      "skills": ["Node.js", "Express", "MongoDB", "SQL"],
+      "projects" : [1,2],
+      "reviews": [
+        {
+          "client": "Roben niviz ",
+          "feedback": "Un plaisir de travailler avec Paul, toujours des solutions rapides et efficaces.",
+          "rating": 4.5
+        },
+        {
+          "client": "Kalya raya",
+          "feedback": "Un plaisir de travailler avec Paul, toujours des solutions rapides et efficaces.",
+          "rating": 4.5
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Youness Kamal",
+      "role": "Développeur Back-end",
+      "bio": "Expert en gestion de bases de données et sécurité.",
+      "skills": ["Node.js", "Express", "MongoDB", "SQL"],
+      "image" : "./img/kamal.jpg",
+      "projects" : [1,2,3,4],
+      "reviews": [
+        {
+          "client": "Marie Durant",
+          "feedback": "Un plaisir de travailler avec Paul, toujours des solutions rapides et efficaces.",
+          "rating": 5
+        },
+        {
+          "client": "Marie Durant",
+          "feedback": "Un plaisir de travailler avec Paul, toujours des solutions rapides et efficaces.",
+          "rating": 4.5
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Zakaria Kardache",
+      "role": "Développeur Back-end",
+      "bio": "Expert en gestion de bases de données et sécurité.",
+      "image" : "./img/zakarialfarda.jpg",
+      "skills": ["Node.js", "Express", "MongoDB", "SQL"],
+      "projects" : [1,2,3,4],
+      "reviews": [
+        {
+          "client": "Marie Durant",
+          "feedback": "Un plaisir de travailler avec Paul, toujours des solutions rapides et efficaces.",
+          "rating": 4.5
+        },
+        {
+          "client": "Marie Durant",
+          "feedback": "Un plaisir de travailler avec Paul, toujours des solutions rapides et efficaces.",
+          "rating": 4.5
+        },
+        {
+          "client": "Marie Durant",
+          "feedback": "Un plaisir de travailler avec Paul, toujours des solutions rapides et efficaces.",
+          "rating": 4.5
+        }
+      ]
+    }
+  ]
+}

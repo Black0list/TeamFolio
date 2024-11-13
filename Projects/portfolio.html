@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portrfolio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body class="porfoliocustomer" style="background-color: #20252A ">
+    <section id="mtyportfolio" class="content" >
+    </section>
+    <section>
+        <div id="porfolioinfo">
+            
+              
+        </div>
+        
+    </section>
+    
+
+        <div style="display: none;" id="Skills">
+            <img class="img" id="css" src="img/icons8-css-48.png" alt="">
+            <img class="img" id="html" src="img/icons8-html-48.png" alt="">
+            <img class="img" id="js" src="img/icons8-js-48.png" alt="">
+            <img class="img" id="bootstrap" src="img/icons8-bootstrap-48.png" alt="">
+            <img class="img" id="node js" src="img/icons8-nœud-js-48.png" alt="">
+            <img class="img" id="sql" src="img/icons8-sql-48.png" alt="">
+        </div>
+        <section class="content-skills">
+
+            <div  id="yourskills">
+                
+            </div>
+            <button style="background: yellow; padding: 10px 20px; border-radius: 8px; :hover{color: blue;}" onclick="addskill()">ADD SKILL</button>
+        </section>
+    </section>
+    <!-- reviews  -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-2 mb-lg-4 text-white">
+          <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
+            
+            <h2  class="display-5 fw-bold">REVIEWS(<span id="counterrevious">0</span>)</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta harum ipsum venenatis metus sem veniam eveniet aperiam suscipit.</p>
+          </div>
+        </div>
+        <div class="row g-5 py-4 justify-content-center">
+          <div id="review" class="col-lg-8">           
+          </div>
+        </div>
+      </div>
+    </section>
+    
+      <button  type="button"   class="btn btn-warning text-center" data-bs-toggle="modal" data-bs-target="#exampleModal"|   data-bs-whatever="@mdo" >1Add a review</button>
+      
+    <div>
+      <div style="display: none;" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div id="modaladd" class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add a review</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">USER  Name :</label>
+                  <input type="text" class="form-control" id="client-name">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">REVIEW Message :</label>
+                  <textarea class="form-control" id="message-client"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="recipient-text" class="col-form-label">Rating  :</label>
+                  <input type="text" class="form-control" id="rating-client">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" onclick="addreview()"  class="btn btn-primary ">Send message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <section>
+      <div id="modal1" style="display: none;" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button onclick="closemodal()" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">USER  Name :</label>
+                <input type="text" class="form-control" id="client-name1">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">REVIEW Message :</label>
+                <textarea class="form-control" id="message-client1"></textarea>
+              </div>
+              <div class="mb-2">
+                <label for="recipient-text" class="col-form-label">Rating  :</label>
+                <input type="text" class="form-control" id="rating-client1">
+              </div>
+            </form>
+            <div class="modal-footer">
+              <button onclick="closemodal()" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button onclick="modify(this)" type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+</body>
+
+<script src="myindex.js"></script>
+
+
+</html>
