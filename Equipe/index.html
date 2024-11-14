@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body class="main">
+
+      <nav class="navbar navbar-expand-lg bg-white  sticky-top ">
+        <div class="container">
+          <a class="navbar-brand" href="#"><h1>YIZA</h1></a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MAIN" aria-controls="MAIN" aria-expanded="false" aria-label="Toggle navigation">
+          </button>
+          <div class="collapse navbar-collapse" id="MAIN">
+            <ul id="lamba" class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link   active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  " href="#team">OUR TEAM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  p-lg-2" href="#allinfo">PROJECTS</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+                <section style="background-color: #20252A !important;" id="team" class="bg-light pt-5 pb-5 shadow-sm">
+                  <div class="container">
+                    <div class="row pt-5">
+                      <div class="col-12">
+                        <h3 class="text-center text-white border-bottom mb-4">Team Projects</h3>
+                      </div>
+                    </div>
+                    <div id="projectsteam" class="row">
+                    </div>
+                  </section>
+               <section>  
+                <h1>Team Mambers</h1>
+                <div style="background-color: #20252A;" id="allinfo" class="row g-4 mt-5">
+                </div>
+               </section>
+               <footer>
+                <div class="equipefooter">
+                  <h3>YIZA</h3>
+                  <p>© 2023, Your Company Name</p>
+                  <div>
+                    <dl>
+                      <dt class="footername"><h2>Team Mambers</h2></dt>
+                      
+                      <dd><li>Hadoui Abdelkebir</li>
+                        <li>SAMOUDI ILYASS</li>
+                        <li>YOUNESS KAMAL</li>
+                        <li>ZAKARIA KARDACH</li></dd>
+                    </dl>
+                   
+                  </div>
+                 
+
+
+
+                </div>
+               </footer>
+                 
+     <script src="myindex.js"></script>
+     <script> 
+fetch("all.json")
+.then(response => response.json())
+.then(data => {
+    showprojects(data[0].projects,data[1].team)
+})
+function showprojects(projects,team){
+  document.getElementById("projectsteam")
+  for(let elem of projects){
+    if(elem.teamMember.length === 4){
+      let content = `<div style="background-color: #20252A;" class="col-lg-4 mb-3 d-flex align-items-round">
+                        <div class="card">
+                          <img src="${elem.img}">
+                          <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">${elem.title}</h5>
+                            <p class="card-text mb-4">${elem.description}</p>
+                            <a href="#" class="btn btn-primary text-white mt-auto align-self-start">Projects</a>
+                          </div>
+                        </div>
+                      </div>`
+                      document.getElementById("projectsteam").innerHTML += content
+    }
+  }
+}
+
+     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
