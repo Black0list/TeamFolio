@@ -30,22 +30,43 @@
           </div>
         </div>
       </nav>
-                <h3 class="heading1 col rounded-bottom-1 bg-color-white">PROJECTS</h3>
-
-                <section id="team" class="bg-light pt-5 pb-5 shadow-sm">
+                <section style="background-color: #20252A !important;" id="team" class="bg-light pt-5 pb-5 shadow-sm">
                   <div class="container">
                     <div class="row pt-5">
                       <div class="col-12">
-                        <h3 class="text-center   border-bottom mb-4">Team Projects</h3>
+                        <h3 class="text-center text-white border-bottom mb-4">Team Projects</h3>
                       </div>
                     </div>
                     <div id="projectsteam" class="row">
                     </div>
                   </section>
-          
-               
-                  <div id="allinfo" class="row g-4 mt-5">
+               <section>  
+                <h1>Team Mambers</h1>
+                <div style="background-color: #20252A;" id="allinfo" class="row g-4 mt-5">
+                </div>
+               </section>
+               <footer>
+                <div class="equipefooter">
+                  <h3>YIZA</h3>
+                  <p>© 2023, Your Company Name</p>
+                  <div>
+                    <dl>
+                      <dt class="footername"><h2>Team Mambers</h2></dt>
+                      
+                      <dd><li>Hadoui Abdelkebir</li>
+                        <li>SAMOUDI ILYASS</li>
+                        <li>YOUNESS KAMAL</li>
+                        <li>ZAKARIA KARDACH</li></dd>
+                    </dl>
+                   
                   </div>
+                 
+
+
+
+                </div>
+               </footer>
+                 
      <script src="myindex.js"></script>
      <script> 
 fetch("all.json")
@@ -57,13 +78,13 @@ function showprojects(projects,team){
   document.getElementById("projectsteam")
   for(let elem of projects){
     if(elem.teamMember.length === 4){
-      let content = `<div class="col-lg-4 mb-3 d-flex align-items-round">
+      let content = `<div style="background-color: #20252A;" class="col-lg-4 mb-3 d-flex align-items-round">
                         <div class="card">
                           <img src="${elem.img}">
                           <div class="card-body d-flex flex-column">
                             <h5 class="card-title">${elem.title}</h5>
                             <p class="card-text mb-4">${elem.description}</p>
-                            <a href="#" class="btn btn-primary text-white mt-auto align-self-start">Book now</a>
+                            <a href="#" class="btn btn-primary text-white mt-auto align-self-start">Projects</a>
                           </div>
                         </div>
                       </div>`

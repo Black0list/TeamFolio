@@ -71,6 +71,11 @@ function clientreviews(mydata){
 }
     
 }
+let myarraydata = []
+fetch("all.json")
+.then(response => response.json)
+.then(data => myarraydata = data )
+
 var mypersonneindex = localStorage.getItem("myValue");
 function displaypersonalportfolio(portfliodata){
     let carteportfolio = document.getElementById("mtyportfolio")
@@ -80,13 +85,22 @@ function displaypersonalportfolio(portfliodata){
             let contentport = `<div class="part2">
             <h1>${ele.name}</h1> 
             <h2>I'M ${ele.role}</h2>
-            
             <p>${ele.bio}</p>
+             <h6 > Gmail  :  ${ele.gmail}  </h6>
+             <h6 >SKILLS :  ${ele.skills.join(" | ")}   </h6>
+             <h6>Phone  :  ${ele.phone}  </h6>
+              <h6>Country  :  ${ele.country}  </h6>
+               <h6>City  :  ${ele.city}  </h6>
+
+             <h5> </h5>
             </div>
            <div class="part1">
             <img src="${ele.image}" alt="">
             </div> `
             carteportfolio.innerHTML += contentport
+            
+           
+
 
         }
 

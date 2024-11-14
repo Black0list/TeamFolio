@@ -42,10 +42,27 @@ body {
     display: grid ;
     grid-template-columns: 1fr auto;
 }
+.portfoliosection {
+    display: flex;
+    align-items: center;
+}
+.modify{
+    background-color: yellow;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    justify-self: center;
+    
+}
 .icons > * {
     width: 25px;
     height: 25px; 
     cursor: pointer ;
+}
+.modifybutton {
+    
+    display: flex ;
+    justify-content: center;
 }
  @media ( max-width : 450px){
     .content{

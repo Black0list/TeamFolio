@@ -10,6 +10,7 @@
     padding-top: 20px;
     padding-bottom: 30px;
     padding-left: 15px;
+    
 }
 .heading1 {
     padding-top: 30px;
@@ -73,8 +74,16 @@
 }
 .row1{ 
     display: flex; 
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 #projectsteam {
     margin-right: 30px !important;
+}
+.equipefooter {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    align-items: center;
+        
 }

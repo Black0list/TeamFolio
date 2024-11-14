@@ -10,7 +10,9 @@
       
       "bio": "Expert en gestion de bases de données et sécurité.",
       "image" : "./img/7adoui.jpg",
-
+      "phone" : "0677892322",
+      "city" : "Youssoufia",
+      "country":"Morocco", 
       "skills": ["HTML", "CSS", "JavaScript", "React"],
       "projects" : [1,2,3,4],
       "gmail" : "HadouiAbdelkebir@gmail.com",
@@ -29,6 +31,10 @@
       "bio": "Expert en gestion de bases de données et sécurité.",
       "image" : "./img/samoudi.jpg",
       "skills": ["Node.js", "Express", "MongoDB", "SQL"],
+      "gmail" : "ilyasssamoudi@gmail.com",
+      "phone" : "0677892322",
+      "country" : "Morocco",
+      "city"    : "Agadir",
       "projects" : [1,2],
       "reviews": [
         {
@@ -50,6 +56,10 @@
       "bio": "Expert en gestion de bases de données et sécurité.",
       "skills": ["Node.js", "Express", "MongoDB", "SQL"],
       "image" : "./img/kamal.jpg",
+      "gmail" : "YounesKamal@gmail.com",
+      "phone" : "0677892322",
+      "country" : "Morocco",
+      "city"    : "Agadir",
       "projects" : [1,2,3,4],
       "reviews": [
         {
@@ -71,6 +81,10 @@
       "bio": "Expert en gestion de bases de données et sécurité.",
       "image" : "./img/zakarialfarda.jpg",
       "skills": ["Node.js", "Express", "MongoDB", "SQL"],
+      "gmail" : "ZakariaKardach@gmail.com",
+      "phone" : "0677892322",
+      "country" : "Morocco",
+      "city"    : "Agadir",
       "projects" : [1,2,3,4],
       "reviews": [
         {
