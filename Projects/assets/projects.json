@@ -3,6 +3,7 @@
       {
         "id": 1,
         "title": "Application de gestion de tâches",
+        "img" : "./assets/icons/project.jpg",
         "description": "Une application permettant de gérer des tâches de manière collaborative.",
         "category": "Développement d'Application",
         "teamMember": [1, 2],
@@ -24,6 +25,7 @@
       {
         "id": 2,
         "title": "Site e-commerce",
+        "img" : "./assets/icons/project.jpg",
         "description": "Développement d'un site de vente en ligne avec intégration de paiement.",
         "category": "E-commerce",
         "teamMember": [1],
@@ -32,7 +34,7 @@
         "reviews": [
           {
             "client": "Boutique XYZ",
-            "feedback": "Excellent travail, site fluide et sécurisé.",
+            "feedback": "Excellent travail, site fluide et sécurisé..",
             "rating": 5
           }
         ]
@@ -40,6 +42,7 @@
       {
         "id": 3,
         "title": "Site e-commerce Vêtements",
+        "img" : "./assets/icons/project.jpg",
         "description": "Développement d'un site de vente en ligne avec intégration de paiement.",
         "category": "E-commerce",
         "teamMember": [1],
@@ -48,16 +51,27 @@
         "reviews": [
           {
             "client": "Boutique XYZ",
-            "feedback": "Excellent travail et sécurisé.",
+            "feedback": "Excellent travail et sécurisé.....",
             "rating": 5
+          },
+          {
+            "client": "Entreprise ABC",
+            "feedback": "L'application fonctionne parfaitement et a amélioré notre productivité.",
+            "rating": 3.2
+          },
+          {
+            "client": "Entreprise ABC",
+            "feedback": "L'application fonctionne parfaitement et a amélioré notre productivité.",
+            "rating": 3.2
           }
         ]
       },
       {
         "id": 4,
         "title": "Application de gestion des Rendez-vous",
+        "img" : "./assets/icons/project.jpg",
         "description": "Une application permettant de gérer des tâches de manière collaborative.",
-        "category": "Développement Web",
+        "category": "Développement d'Application",
         "teamMember": [1, 2],
         "technologies": ["./assets/icons/js.png", "./assets/icons/html.png", "./assets/icons/react.png", "./assets/icons/mongodb.png"],
         "details": "We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with .is-invalid and .is-valid. Note that .invalid-feedback is also supported with these classes. For invalid fields, ensure that the invalid feedback/error message ",
@@ -72,6 +86,7 @@
       {
         "id": 5,
         "title": "Web Site Cars",
+        "img" : "./assets/icons/project.jpg",
         "description": "Une application permettant de gérer des tâches de manière collaborative.",
         "category": "Développement Web",
         "teamMember": [1, 2, 3, 4],
@@ -88,6 +103,7 @@
       {
         "id": 6,
         "title": "AppStore",
+        "img" : "./assets/icons/project.jpg",
         "description": "Une application permettant de gérer des tâches de manière collaborative.",
         "category": "Développement Web",
         "teamMember": [1, 2, 3, 4],
@@ -104,6 +120,7 @@
       {
         "id": 7,
         "title": "Jorex Store Render",
+        "img" : "./assets/icons/project.jpg",
         "description": "Une application permettant de gérer des tâches de manière collaborative.",
         "category": "Développement Web",
         "teamMember": [1, 2, 3, 4],
