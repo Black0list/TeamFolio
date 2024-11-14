@@ -233,7 +233,7 @@ span {
     color: var(--FontColorWhite); 
 }
 
-#projects_actions .modal-content, #projects_main .modal-content{
+#projects_actions .modal-content,.modal-dialog .modal-content, #projects_main .modal-content{
     background-color: var(--BgColor);
 }
 

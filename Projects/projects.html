@@ -15,7 +15,7 @@
 <body id="body">
   <header id="projects_header">
     <h1>Projects</h1>
-    <img style="width: 60px; height: 60px" src="./assets/icons/profile 1.png" alt="" />
+    <!-- <img style="width: 60px; height: 60px" src="./assets/icons/profile 1.png" alt="" /> -->
   </header>
   <div id="projects_actions">
     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal1">
@@ -62,7 +62,7 @@
                     <option value="./assets/icons/vuejs.png">Vue.js</option>
                     <option value="./assets/icons/css.png">Css</option>
                     <option value="./assets/icons/js.png">JavaScript</option>
-                    <option value="./assets/icons/sass.png">JavaScript</option>
+                    <option value="./assets/icons/sass.png">Sass</option>
                   </optgroup>
                   <optgroup label="backend">
                     <option value="./assets/icons/java.png">Java</option>
@@ -74,7 +74,7 @@
                 </select>
               </div>
               <div class="mb-3">
-                <button id="addProject" class="btn btn-warning" onclick="addProject()">Add Project</button>
+                <a id="addProject" onclick="addProject()" type="sub" class="btn btn-warning" data-bs-dismiss="modal">Add Project</a>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                   Close
                 </button>
@@ -85,22 +85,13 @@
       </div>
     </div>
 
-    <div class="btn-group">
-      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-        Sort
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end">
-        <li><button class="dropdown-item" type="button">Action</button></li>
-        <li>
-          <button class="dropdown-item" type="button">Another action</button>
-        </li>
-        <li>
-          <button class="dropdown-item" type="button">
-            Something else here
-          </button>
-        </li>
-      </ul>
-    </div>
+    <select id="sort" onchange="sortProjects()" style="width: fit-content;" class="form-select" aria-label="Default select example">
+      <option value="0">All</option>
+      <option value="1">Most Popular</option>
+      <option value="2">Développement d'Application</option>
+      <option value="3">Développement Web</option>
+      <option value="4">E-commerce</option>
+    </select>
   </div>
   <main id="projects_main">
 
