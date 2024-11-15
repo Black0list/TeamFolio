@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>${service.description}</p>
                 <h3 class="text-dark">${service.price}</h3>
                 <a href="#" class="card-link text-warning" data-toggle="modal" data-target="#myModal">View Details</a>
-              </div>
+                <a href="#" class="card-link text-warning" >Modification</a>
+              </div class ="row">
               <div class="section-heading-line-left"></div>
             </div>
           </div>`;
