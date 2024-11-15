@@ -1,0 +1,54 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "name": "Dév Front-end",
+            "description": "Création d'interfaces utilisateur attrayantes et réactives.",
+            "specialty": "Développement Web",
+            "price": "250 Dh/heure",
+            "image":"./img/s.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Réseautique IT",
+            "description": "Configuration et maintenance des infrastructures réseau.",
+            "specialty": "IT Networking",
+            "price": "200 Dh/heure",
+            "image":"./img/a.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Développement",
+            "description": "Conception et développement d'applications mobiles .",
+            "specialty": "Mobile",
+            "price": "199 Dh/heure",
+            "image":"./img/a.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Security",
+            "description": "Développement de logiciels sur mesure pour diverses applications.",
+            "specialty": "system Secure",
+            "price": "150 Dh/heure",
+            "image":"./img/y.jpg.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Développement",
+            "description": "Développement de logiciels sur mesure pour diverses applications.",
+            "specialty": "Dév Logiciel",
+            "price": "155 Dh/heure",
+            "image":"./img/y.jpg.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Dév Back-end",
+            "description": "Mise en place de serveurs et mesure mesure pour diverses applications.",
+            "specialty": "Développement Web",
+            "price": "180 Dh/heure",
+            "image":"./img/profile-pic.png"
+           
+        }
+    ]
+  }
+  
