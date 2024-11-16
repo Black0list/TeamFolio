@@ -36,14 +36,17 @@
               <div class="mb-3">
                 <label for="titleInput" class="form-label">Title</label>
                 <input type="text" class="form-control" id="titleInput" placeholder="Project's Title" required>
+                <p id="titleError" style="color: red;"></p>
               </div>
               <div class="mb-3">
                 <label for="descriptionInput" class="form-label">Description</label>
                 <input type="text" class="form-control" id="descriptionInput" placeholder="Project's Description" required>
+                <p id="descriptionError" style="color: red;"></p>
               </div>
               <div class="mb-3">
                 <label for="validationTextarea" class="form-label">Details</label>
                 <textarea class="form-control" id="validationTextarea" placeholder="Project's Details" required></textarea>
+                <p id="detailsError" style="color: red;"></p>
               </div>
               <div class="mb-3">
                 <select class="form-select" id="categoryInput" required aria-label="select example">
@@ -52,6 +55,7 @@
                   <option value="Développement d'Application">Développement d'Application</option>
                 </select>
                 <div class="invalid-feedback">Example invalid select feedback</div>
+                <p id="categoryError" style="color: red;"></p>
               </div>
               <div class="mb-3">
                 <select class="form-multi-select" id="ms1" multiple data-coreui-search="global" required>
@@ -72,9 +76,10 @@
                     <option value="./assets/icons/mongodb.png">Mongodb</option>
                   </optgroup>
                 </select>
+                <p id="techsError" style="color: red;"></p>
               </div>
               <div class="mb-3">
-                <a id="addProject" onclick="addProject()" type="sub" class="btn btn-warning" data-bs-dismiss="modal">Add Project</a>
+                <a id="addProject" onclick="addProject()" type="sub" class="btn btn-warning">Add Project</a>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                   Close
                 </button>

@@ -1,6 +1,6 @@
 const details = document.getElementById("projects_main");
 
-let titleInput = document.getElementById("titleInput");
+const titleInput = document.getElementById("titleInput");
 const descriptionInput = document.getElementById("descriptionInput");
 const validationTextarea = document.getElementById("validationTextarea");
 const categoryInput = document.getElementById("categoryInput");
@@ -8,6 +8,48 @@ const techInput = document.getElementById("ms1");
 let arr = [];
 
 loadContent();
+
+function validateFieldsAdd() {
+  const title = document.getElementById("titleInput").value.trim();
+  const description = document.getElementById("descriptionInput").value.trim();
+  const details = document.getElementById("validationTextarea").value.trim();
+  const category = document.getElementById("categoryInput").value.trim();
+  const technologies = document.getElementById("ms1").selectedOptions;
+
+  const titleValid = /^[a-zA-Z0-9\s]{3,10}$/.test(title);
+  const descriptionValid = /^[a-zA-Z0-9\s,.]{10,250}$/.test(description);
+  const detailsValid = /^[\s\S]{20,1000}$/.test(details);
+  const categoryValid = /^(E-commerce|Développement Web|Développement d'Application)$/.test(category);
+  const technologiesValid = technologies.length > 0;
+
+  document.getElementById("titleError").textContent = titleValid ? '' : 'Invalid title.';
+  document.getElementById("descriptionError").textContent = descriptionValid ? '' : 'Invalid description.';
+  document.getElementById("detailsError").textContent = detailsValid ? '' : 'Invalid details.';
+  document.getElementById("categoryError").textContent = categoryValid ? '' : 'Invalid category.';
+  document.getElementById("techsError").textContent = technologiesValid ? '' : 'Select at least one technology.';
+
+  return titleValid && descriptionValid && detailsValid && categoryValid && technologiesValid;
+}
+
+function validateFieldsEdit() {
+  const title = document.getElementById("titleInput").value.trim();
+  const description = document.getElementById("descriptionInput").value.trim();
+  const details = document.getElementById("validationTextarea").value.trim();
+  const category = document.getElementById("categoryInput").value.trim();
+
+  const titleValid = /^[a-zA-Z0-9\s]{3,10}$/.test(title);
+  const descriptionValid = /^[a-zA-Z0-9\s,.]{10,250}$/.test(description);
+  const detailsValid = /^[\s\S]{20,1000}$/.test(details);
+  const categoryValid = /^(E-commerce|Développement Web|Développement d'Application)$/.test(category);
+
+
+  document.getElementById("titleError").textContent = titleValid ? '' : 'Invalid title.';
+  document.getElementById("descriptionError").textContent = descriptionValid ? '' : 'Invalid description.';
+  document.getElementById("detailsError").textContent = detailsValid ? '' : 'Invalid details.';
+  document.getElementById("categoryError").textContent = categoryValid ? '' : 'Invalid category.';
+
+  return titleValid && descriptionValid && detailsValid && categoryValid ;
+}
 
 function loadContent() {
   fetch("./assets/projects.json")
@@ -83,6 +125,8 @@ function getProject(index) {
   details.innerHTML = `
     <code>Title</code>
     <div class="projects_main_content" id="projects_main_details_title">${arr[index].title}</div>
+    <code>Members</code>
+    <div class="projects_main_content" id="projects_main_details_member">${arr[index].teamMember}</div>
     <code>Technologies</code>
     <div class="projects_main_content" id="projects_main_details_techs"></div>
     <code>Description</code>
@@ -123,6 +167,12 @@ function getProject(index) {
 }
 
 function addProject() {
+ 
+  if (!validateFieldsAdd()) {
+    return; 
+  }
+
+
   details.innerHTML += `<div class="card" style="width: 20rem">
     <img src="./assets/icons/project.jpg" style="width: 100%; height: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px;" alt="..." />
     <div class="card-body">
@@ -140,6 +190,7 @@ function addProject() {
     }
   }
 
+
   arr.push({
     id: prjNbr,
     title: `${titleInput.value}`,
@@ -149,8 +200,15 @@ function addProject() {
     details: `${validationTextarea.value}`,
     reviews: [],
   });
-  
+  alert("Successfully added the Project");
+
+  titleInput.value = "";
+  descriptionInput.value = "";
+  validationTextarea.value = "";
+  categoryInput.value = "";
+  techInput.value = "";
 }
+
 
 function editProject(index) {
   --index;
@@ -186,6 +244,10 @@ function editProject(index) {
 }
 
 function saveEdit(index) {
+  if (!validateFieldsAdd()) {
+    return; 
+  }
+  
   const updatedProject = {
     id: arr[index].id,
     title: document.getElementById(`titleInput${index}`).value,
@@ -228,3 +290,5 @@ function sortProjects() {
   }
   displayProjects(array);
 }
+
+
