@@ -1,0 +1,126 @@
+body {
+    background-color: #20252A;
+    margin: 0 ;
+    padding:  0 ;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifx;
+    color: white;
+    font-size: 20px;
+}
+
+.content {
+    
+    margin: 0 auto;
+    margin-top: 20px;   
+    padding: 10px;
+    display: flex;
+    flex-direction: row; 
+    width: 90%; 
+    align-items: center;
+    border: 1px solid black;
+    background-color: #2D353C;
+    border-radius: 10px;
+   
+    
+}
+.part1 {
+    margin: 0 auto;
+}
+.part1 img{
+    height: 300px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.part2 {
+    padding-left: 30px;
+    text-align: start;
+   width:50%;
+    height: auto;
+    color: white;
+}
+.icons {
+    display: grid ;
+    grid-template-columns: 1fr auto;
+}
+.portfoliosection {
+    display: flex;
+    align-items: center;
+}
+.modify{
+    background-color: yellow;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    justify-self: center;
+    
+}
+.icons > * {
+    width: 25px;
+    height: 25px; 
+    cursor: pointer ;
+}
+.modifybutton {
+    
+    display: flex ;
+    justify-content: center;
+}
+ @media ( max-width : 450px){
+    .content{
+        display: grid;
+        
+        font-size: 30px ;
+       
+
+
+    }
+    .part1 img{
+        margin-right: 10px; 
+         border-radius: 50%; 
+     
+ }
+.part1 {
+        margin: 0 auto;
+    } 
+    .part2 {
+        width: auto;
+        text-align: start;
+        height: auto;
+        color: white;
+    }
+}
+#yourskills {
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+#yourskills > * {
+    height: 100px ;
+    width: 100px;
+}
+#reviews > * {
+    box-sizing: border-box !important; 
+    width: 50%;   
+    background-color: rgb(249, 244, 244);
+    color: black;
+    border-radius: 50px;
+    padding: 0 30px;
+}
+.list > * {
+    display:  inline;
+    padding:  40px;
+    cursor: pointer;
+}
+#yourskills {
+    display: flex;
+
+}
+.content-skills {
+    display: flex;
+    flex-direction: column;
+    
+}
+#project_team {
+    margin-right: 50px ;
+}

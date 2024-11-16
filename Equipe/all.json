@@ -1,0 +1,217 @@
+[
+  {
+    "projects": [
+      {
+        "id": 1,
+        "title": "Application de gestion de tâches",
+        "description": "Une application permettant de gérer des tâches de manière collaborative.",
+        "category": "Développement d'Application",
+        "teamMember": [1, 2],
+        "technologies": ["./assets/icons/js.png", "./assets/icons/sass.png", "./assets/icons/html.png", "./assets/icons/css.png", "./assets/icons/mongodb.png"],
+        "details": "We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with .is-invalid and .is-valid. Note that .invalid-feedback is also supported with these classes. For invalid fields, ensure that the invalid feedback/error message is associated with the relevant form field using aria-describedby (noting that this attribute allows more than one id to be referenced, in case the field already points to additional form text).",
+        "reviews": [
+          {
+            "client": "Entreprise ABC",
+            "feedback": "L'application fonctionne parfaitement et a amélioré notre productivité.",
+            "rating": 4.8
+          },
+          {
+            "client": "Entreprise ABC",
+            "feedback": "L'application fonctionne parfaitement et a amélioré notre productivité.",
+            "rating": 3.2
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Site e-commerce",
+        "description": "Développement d'un site de vente en ligne avec intégration de paiement.",
+        "category": "E-commerce",
+        "teamMember": [1],
+        "technologies": ["./assets/icons/html.png", "./assets/icons/css.png", "./assets/icons/mongodb.png"],
+        "details": "We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with .is-invalid and .is-valid. Note that .invalid-feedback is also supported with these classes. For invalid fields, ensure that the invalid feedback/error message is associated with the relevant form field using aria-describedby (noting that this attribute allows more than one id to be referenced, in case the field already points to additional form text).",
+        "reviews": [
+          {
+            "client": "Boutique XYZ",
+            "feedback": "Excellent travail, site fluide et sécurisé.",
+            "rating": 5
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Site e-commerce Vêtements",
+        "description": "Développement d'un site de vente en ligne avec intégration de paiement.",
+        "category": "E-commerce",
+        "teamMember": [1],
+        "technologies": ["./assets/icons/js.png", "./assets/icons/sass.png", "./assets/icons/mongodb.png"],
+        "details": "We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with .is-invalid and .is-valid. Note that .invalid-feedback is also supported with these classes. For invalid fields, ensure that the invalid feedback/error message is associated with the relevant form field using aria-describedby (noting that this attribute allows more than one id to be referenced, in case the field already points to additional form text).",
+        "reviews": [
+          {
+            "client": "Boutique XYZ",
+            "feedback": "Excellent travail et sécurisé.",
+            "rating": 5
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Application de gestion des Rendez-vous",
+        "description": "Une application permettant de gérer des tâches de manière collaborative.",
+        "category": "Développement Web",
+        "teamMember": [1, 2],
+        "technologies": ["./assets/icons/js.png", "./assets/icons/html.png", "./assets/icons/react.png", "./assets/icons/mongodb.png"],
+        "details": "We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with .is-invalid and .is-valid. Note that .invalid-feedback is also supported with these classes. For invalid fields, ensure that the invalid feedback/error message ",
+        "reviews": [
+          {
+            "client": "Entreprise ABC",
+            "feedback": "L'application fonctionne bien et est intuitive.",
+            "rating": 4.8
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Web Site Cars",
+        "description": "Une application permettant de gérer des tâches de manière collaborative.",
+        "category": "Développement Web",
+        "teamMember": [1, 2, 3, 4],
+        "technologies": ["./assets/icons/js.png", "./assets/icons/html.png", "./assets/icons/java.png", "./assets/icons/mongodb.png"],
+        "details": "We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with .is-invalid and .is-valid. Note that .invalid-feedback is also supported with these classes. For invalid fields, ensure that the invalid feedback/error message ",
+        "reviews": [
+          {
+            "client": "Entreprise ABC",
+            "feedback": "L'application fonctionne bien et est intuitive.",
+            "rating": 4.8
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "AppStore",
+        "description": "Une application permettant de gérer des tâches de manière collaborative.",
+        "category": "Développement Web",
+        "teamMember": [1, 2, 3, 4],
+        "technologies": ["./assets/icons/js.png", "./assets/icons/html.png", "./assets/icons/nodejs.png", "./assets/icons/mongodb.png"],
+        "details": "We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with .is-invalid and .is-valid. Note that .invalid-feedback is also supported with these classes. For invalid fields, ensure that the invalid feedback/error message ",
+        "reviews": [
+          {
+            "client": "Entreprise ABC",
+            "feedback": "L'application fonctionne bien et est intuitive.",
+            "rating": 4.8
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Jorex Store Render",
+        "description": "Une application permettant de gérer des tâches de manière collaborative.",
+        "category": "Développement Web",
+        "teamMember": [1, 2, 3, 4],
+        "technologies": ["./assets/icons/js.png", "./assets/icons/django.png", "./assets/icons/angular.png", "./assets/icons/mongodb.png"],
+        "details": "We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with .is-invalid and .is-valid. Note that .invalid-feedback is also supported with these classes. For invalid fields, ensure that the invalid feedback/error message ",
+        "reviews": [
+          {
+            "client": "Entreprise ABC",
+            "feedback": "L'application fonctionne bien et est intuitive.",
+            "rating": 4.8
+          }
+        ]
+      }
+    ]
+  },
+  
+
+
+{
+  "team": [
+    {
+      "id": 1,
+      "name": "Hadoui Abdelkebir",
+      "role": "Développeur Front-end",
+      
+      "bio": "Expert en gestion de bases de données et sécurité.",
+      "image" : "./img/7adoui.jpg",
+
+      "skills": ["HTML", "CSS", "JavaScript", "React"],
+      "projects" : [1,2,3,4],
+      "gmail" : "HadouiAbdelkebir@gmail.com",
+      "reviews": [
+        {
+          "client": "Jean Dupont",
+          "feedback": "Excellent travail, très réactive et professionnelle.",
+          "rating": 5 
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ilyass Samoudi",
+      "role": "Développeur Back-end",
+      "bio": "Expert en gestion de bases de données et sécurité.",
+      "image" : "./img/samoudi.jpg",
+      "skills": ["Node.js", "Express", "MongoDB", "SQL"],
+      "projects" : [1,2],
+      "reviews": [
+        {
+          "client": "Roben niviz ",
+          "feedback": "Un plaisir de travailler avec Paul, toujours des solutions rapides et efficaces.",
+          "rating": 4.5
+        },
+        {
+          "client": "Kalya raya",
+          "feedback": "Un plaisir de travailler avec Paul, toujours des solutions rapides et efficaces.",
+          "rating": 4.5
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Youness Kamal",
+      "role": "Développeur Back-end",
+      "bio": "Expert en gestion de bases de données et sécurité.",
+      "skills": ["Node.js", "Express", "MongoDB", "SQL"],
+      "image" : "./img/kamal.jpg",
+      "projects" : [1,2,3,4],
+      "reviews": [
+        {
+          "client": "Marie Durant",
+          "feedback": "Un plaisir de travailler avec Paul, toujours des solutions rapides et efficaces.",
+          "rating": 5
+        },
+        {
+          "client": "Marie Durant",
+          "feedback": "Un plaisir de travailler avec Paul, toujours des solutions rapides et efficaces.",
+          "rating": 4.5
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Zakaria Kardache",
+      "role": "Développeur Back-end",
+      "bio": "Expert en gestion de bases de données et sécurité.",
+      "image" : "./img/zakarialfarda.jpg",
+      "skills": ["Node.js", "Express", "MongoDB", "SQL"],
+      "projects" : [1,2,3,4],
+      "reviews": [
+        {
+          "client": "Marie Durant",
+          "feedback": "Un plaisir de travailler avec Paul, toujours des solutions rapides et efficaces.",
+          "rating": 4.5
+        },
+        {
+          "client": "Marie Durant",
+          "feedback": "Un plaisir de travailler avec Paul, toujours des solutions rapides et efficaces.",
+          "rating": 4.5
+        },
+        {
+          "client": "Marie Durant",
+          "feedback": "Un plaisir de travailler avec Paul, toujours des solutions rapides et efficaces.",
+          "rating": 4.5
+        }
+      ]
+    }
+  ]
+}
+]
